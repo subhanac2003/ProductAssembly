@@ -21,7 +21,7 @@ Section 3
 
     a) Sonar lint / EclEmma scan Snapshot: https://github.com/subhanac2003/ProductAssembly/blob/master/reports/sonar_report.png
     
-    b) Final Output Snapshot:
+    b) Final Output Snapshot: https://github.com/subhanac2003/ProductAssembly/blob/master/reports/output.PNG
     
     c) Junit Coverage Snapshot: https://github.com/subhanac2003/ProductAssembly/blob/master/reports/unit_test_coverage.PNG
 
