@@ -2,6 +2,7 @@ package com.interv.assembly;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Scanner;
 import java.util.concurrent.CountDownLatch;
 
 public class AssemblyLine {
@@ -50,5 +51,22 @@ public class AssemblyLine {
 
 	}
 
+	
+	public static void main(String[] args) {
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Enter no. of machines : ");
+		int machines = reader.nextInt(); 
+		
+		System.out.println("Enter no. of bolts : ");
+		int bolts = reader.nextInt();
+		
+		System.out.println("Enter time in seconds to assemble a product : ");
+		int productTime = reader.nextInt();
+		reader.close();
+		
+		AssemblyLine line = new AssemblyLine();
+		long actualTime = line.startAssemblyLine(bolts, machines, productTime);
+		System.out.println("Total Time Taken : "+actualTime);
+	}
 	
 }
